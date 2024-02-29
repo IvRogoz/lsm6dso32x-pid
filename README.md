@@ -1,3 +1,15 @@
+# Update 
+
+Modified to work with NRF Connect SDK.
+Tested with NRF Connect SDK 2.5
+
+Consumes:
+    const struct i2c_dt_spec spec = {
+        .bus = DEVICE_DT_GET(DEVICE_I2C),
+        .addr = <I2C Address>
+    };
+
+
 # 1 - Introduction
 
 Sensor driver for LSM6DSO32X sensor written in C programming language. This repository contains the sensor driver files (.h and .c) to be included, or linked directly as a git submodule, in your project. The driver is MISRA compliant and the documentation can be generated using the [Doxygen](http://www.doxygen.org/) tool.
